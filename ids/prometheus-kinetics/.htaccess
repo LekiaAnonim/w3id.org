@@ -1,0 +1,22 @@
+# # /prometheus-kinetics/
+#
+# Canonical URLs of the records of Prometheus, a database of combustion
+# kinetic models, species, reactions, thermochemistry and experiments.
+#
+# https://w3id.org/prometheus-kinetics/ redirects to https://pr.omethe.us/
+# https://w3id.org/prometheus-kinetics/<kind>/<key> redirects to
+# https://pr.omethe.us/id/<kind>/<key>, for example
+# https://w3id.org/prometheus-kinetics/species/XLYOFNOQVPJJNP-UHFFFAOYSA-N-1 (water).
+#
+# ## Contact
+# This space is administered by:
+#
+# Lekia Prosper
+# GitHub username: LekiaAnonim
+#
+# Richard West
+# GitHub username: rwest
+
+RewriteEngine on
+RewriteRule ^$ https://pr.omethe.us/ [R=302,L]
+RewriteRule ^(.+)$ https://pr.omethe.us/id/$1 [R=302,L]
